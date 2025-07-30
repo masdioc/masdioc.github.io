@@ -1,55 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Umadi | Full Stack Developer</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+    </style>
   </head>
-  <body class="bg-gray-100 text-gray-800 font-sans">
-    <div class="max-w-3xl mx-auto p-6">
-      <header class="mb-10 text-center">
-        <h1 class="text-4xl font-bold mb-2">Umadi</h1>
-        <p class="text-xl text-gray-600">Full Stack Developer</p>
-        <p class="text-gray-500">masdioc@gmail.com</p>
+  <body class="bg-gradient-to-br from-blue-50 via-white to-purple-100 text-gray-800 min-h-screen">
+    <div class="max-w-4xl mx-auto px-6 py-12">
+      <!-- Header -->
+      <header class="text-center mb-12">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-700">Umadi</h1>
+        <p class="text-lg sm:text-xl mt-2 text-gray-600">Full Stack Developer</p>
+        <p class="text-gray-500 mt-1">
+          <a href="mailto:masdioc@gmail.com" class="text-blue-600 hover:underline">masdioc@gmail.com</a>
+        </p>
       </header>
 
-      <section class="mb-10">
-        <h2 class="text-2xl font-semibold mb-4">Experience</h2>
-        <ul class="list-disc list-inside space-y-2">
-          <li>Built and maintained multiple full-stack applications using Laravel and React.</li>
-          <li>Implemented caching strategies using Redis for high-performance web applications.</li>
-          <li>Developed and deployed PWA using Astro and Tailwind CSS.</li>
+      <!-- Experience -->
+      <section class="mb-12">
+        <h2 class="text-2xl font-bold text-purple-700 mb-4 border-b border-purple-300 pb-1">💼 Pengalaman</h2>
+        <ul class="space-y-3 pl-4 list-disc text-gray-700">
+          <li>Membangun aplikasi full-stack menggunakan Laravel dan React.</li>
+          <li>Menerapkan caching Redis untuk meningkatkan performa aplikasi.</li>
+          <li>Deploy PWA menggunakan framework Astro dan Tailwind CSS.</li>
         </ul>
       </section>
 
-      <!-- Portfolio Section -->
-      <section class="bg-white rounded-xl shadow-md p-6 my-6">
-        <h2 class="text-2xl font-semibold mb-4">🛒 AppKita.id – Aplikasi Toko Online (2025)</h2>
+      <!-- Portfolio -->
+      <section class="bg-white rounded-xl shadow-md p-6 mb-12 border-l-4 border-blue-500">
+        <h2 class="text-2xl font-semibold text-blue-700 mb-3">🛒 AppKita.id – Aplikasi Toko Online (2025)</h2>
         <p class="mb-3">
-          <strong>AppKita.id</strong> adalah aplikasi web berbasis <strong>PWA</strong> yang dibangun menggunakan <strong>Astro, React.js, dan Tailwind CSS</strong> di sisi frontend. Backend dikembangkan dengan <strong>Laravel</strong> serta menggunakan <strong>Redis</strong> untuk caching dan <strong>MySQL</strong> sebagai database utama.
+          <strong>AppKita.id</strong> adalah aplikasi web berbasis <strong>PWA</strong> yang dibangun menggunakan <strong>Astro, React.js, dan Tailwind CSS</strong> pada sisi frontend. Backend dikembangkan dengan <strong>Laravel</strong> dan menggunakan <strong>Redis</strong> serta <strong>MySQL</strong> sebagai database.
         </p>
-        <p class="mb-3">
-          Aplikasi ini memiliki 3 jenis pengguna:
-        </p>
-        <ul class="list-disc list-inside mb-3">
+        <p class="mb-2">Aplikasi ini memiliki 3 role pengguna:</p>
+        <ul class="list-disc list-inside pl-4 mb-3">
           <li><strong>Buyer:</strong> Menjelajahi produk, membeli, dan melacak pesanan</li>
-          <li><strong>Seller:</strong> Mengelola produk dan melihat pesanan dari pembeli</li>
-          <li><strong>Admin:</strong> Mengatur kategori, mengelola user dan laporan penjualan</li>
+          <li><strong>Seller:</strong> Mengelola produk dan melihat pesanan</li>
+          <li><strong>Admin:</strong> Mengatur kategori, user, dan laporan</li>
         </ul>
-        <p class="mb-2"><strong>Peran:</strong> Fullstack Developer</p>
-        <p class="mb-2"><strong>Teknologi:</strong> Astro, React.js, Tailwind CSS, Laravel, Redis, MySQL</p>
-        <p class="mb-2"><strong>Link:</strong> <a href="https://appkita.id" class="text-blue-600 hover:underline" target="_blank">https://appkita.id</a></p>
+        <p class="mb-1"><strong>Peran:</strong> Full Stack Developer</p>
+        <p class="mb-1"><strong>Teknologi:</strong> Astro, React.js, Tailwind CSS, Laravel, Redis, MySQL</p>
+        <p><strong>Link:</strong> <a href="https://appkita.id" class="text-blue-600 hover:underline" target="_blank">https://appkita.id</a></p>
       </section>
 
+      <!-- Contact -->
       <section>
-        <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-        <p>
-          I'm available for freelance or full-time positions. Contact me via
-          email: <a href="mailto:masdioc@gmail.com" class="text-blue-600">masdioc@gmail.com</a>
+        <h2 class="text-2xl font-bold text-purple-700 mb-4 border-b border-purple-300 pb-1">📩 Kontak</h2>
+        <p class="text-gray-700">
+          Tersedia untuk pekerjaan freelance atau full-time. Hubungi saya melalui email: 
+          <a href="mailto:masdioc@gmail.com" class="text-blue-600 font-semibold hover:underline">masdioc@gmail.com</a>
         </p>
       </section>
     </div>
