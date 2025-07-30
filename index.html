@@ -1,65 +1,102 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Umadi | Full Stack Developer</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
-    </style>
-  </head>
-  <body class="bg-gradient-to-br from-blue-50 via-white to-purple-100 text-gray-800 min-h-screen">
-    <div class="max-w-4xl mx-auto px-6 py-12">
-      <!-- Header -->
-      <header class="text-center mb-12">
-        <h1 class="text-4xl sm:text-5xl font-extrabold text-blue-700">Umadi</h1>
-        <p class="text-lg sm:text-xl mt-2 text-gray-600">Full Stack Developer</p>
-        <p class="text-gray-500 mt-1">
-          <a href="mailto:masdioc@gmail.com" class="text-blue-600 hover:underline">masdioc@gmail.com</a>
-        </p>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Umadi - Full Stack Developer</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f8f9fa, #e0f7fa);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      text-align: justify;
+    }
 
-      <!-- Experience -->
-      <section class="mb-12">
-        <h2 class="text-2xl font-bold text-purple-700 mb-4 border-b border-purple-300 pb-1">💼 Pengalaman</h2>
-        <ul class="space-y-3 pl-4 list-disc text-gray-700">
-          <li>Membangun aplikasi full-stack menggunakan Laravel dan React.</li>
-          <li>Menerapkan caching Redis untuk meningkatkan performa aplikasi.</li>
-          <li>Deploy PWA menggunakan framework Astro dan Tailwind CSS.</li>
-        </ul>
-      </section>
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
 
-      <!-- Portfolio -->
-      <section class="bg-white rounded-xl shadow-md p-6 mb-12 border-l-4 border-blue-500">
-        <h2 class="text-2xl font-semibold text-blue-700 mb-3">🛒 AppKita.id – Aplikasi Toko Online (2025)</h2>
-        <p class="mb-3">
-          <strong>AppKita.id</strong> adalah aplikasi web berbasis <strong>PWA</strong> yang dibangun menggunakan <strong>Astro, React.js, dan Tailwind CSS</strong> pada sisi frontend. Backend dikembangkan dengan <strong>Laravel</strong> dan menggunakan <strong>Redis</strong> serta <strong>MySQL</strong> sebagai database.
-        </p>
-        <p class="mb-2">Aplikasi ini memiliki 3 role pengguna:</p>
-        <ul class="list-disc list-inside pl-4 mb-3">
-          <li><strong>Buyer:</strong> Menjelajahi produk, membeli, dan melacak pesanan</li>
-          <li><strong>Seller:</strong> Mengelola produk dan melihat pesanan</li>
-          <li><strong>Admin:</strong> Mengatur kategori, user, dan laporan</li>
-        </ul>
-        <p class="mb-1"><strong>Peran:</strong> Full Stack Developer</p>
-        <p class="mb-1"><strong>Teknologi:</strong> Astro, React.js, Tailwind CSS, Laravel, Redis, MySQL</p>
-        <p><strong>Link:</strong> <a href="https://appkita.id" class="text-blue-600 hover:underline" target="_blank">https://appkita.id</a></p>
-      </section>
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
 
-      <!-- Contact -->
-      <section>
-        <h2 class="text-2xl font-bold text-purple-700 mb-4 border-b border-purple-300 pb-1">📩 Kontak</h2>
-        <p class="text-gray-700">
-          Tersedia untuk pekerjaan freelance atau full-time. Hubungi saya melalui email: 
-          <a href="mailto:masdioc@gmail.com" class="text-blue-600 font-semibold hover:underline">masdioc@gmail.com</a>
-        </p>
-      </section>
-    </div>
-  </body>
+    header p {
+      margin: 0.5rem 0;
+    }
+
+    main {
+      padding: 2rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #007BFF;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f1f1f1;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Umadi</h1>
+    <p>Full Stack Developer</p>
+    <p><a href="mailto:masdioc@gmail.com" style="color:white;">masdioc@gmail.com</a></p>
+  </header>
+
+  <main>
+   
+
+    <section>
+      <h2>📲 Presensi Online – Sistem Absensi Digital (2024)</h2>
+      <p><strong>Presensi Online</strong> adalah sistem absensi digital berbasis <strong>Android</strong> dan web. Aplikasi Android dikembangkan menggunakan <strong>Java Native</strong> dan frontend web menggunakan <strong>Vue.js</strong>. Sistem ini menggunakan <strong>PostgreSQL</strong> sebagai database dan dirancang untuk mendukung dua jenis pengguna.</p>
+      <p>Role pengguna aplikasi ini:</p>
+      <ul>
+        <li><strong>Karyawan:</strong> Melakukan presensi, melihat riwayat kehadiran</li>
+        <li><strong>Admin:</strong> Mengelola data pegawai dan laporan kehadiran</li>
+      </ul>
+      <p><strong>Peran:</strong> Project Manajer<br>
+      <strong>Teknologi:</strong> Java Native, Vue.js, PostgreSQL<br>
+      <strong>Platform:</strong> Android dan Web</p>
+    </section>
+     <section>
+      <h2>🛒 Appkita.id – E-Commerce PWA (2025)</h2>
+      <p><strong>Appkita.id</strong> adalah aplikasi web progresif (PWA) untuk e-commerce yang dibangun menggunakan <strong>Astro</strong>, <strong>React.js</strong>, dan <strong>Tailwind CSS</strong> di sisi frontend, dengan backend <strong>Laravel</strong> yang mengimplementasikan <strong>Redis</strong> untuk caching dan menggunakan <strong>MySQL</strong> sebagai database utama.</p>
+      <p>Aplikasi ini memiliki 3 role pengguna:</p>
+      <ul>
+        <li><strong>Buyer:</strong> Melihat produk, menambah ke keranjang, melakukan checkout</li>
+        <li><strong>Seller:</strong> Menambahkan dan mengelola produk serta melihat pesanan</li>
+        <li><strong>Admin:</strong> Manajemen user, kategori, transaksi, dan laporan</li>
+      </ul>
+      <p><strong>Peran:</strong> Full Stack Developer<br>
+      <strong>Teknologi:</strong> Astro, React.js, Tailwind, Laravel, Redis, MySQL</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Umadi | masdioc@gmail.com
+  </footer>
+</body>
 </html>
