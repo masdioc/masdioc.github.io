@@ -1,0 +1,53 @@
+<?php
+include 'header.php'; ?>
+<main>
+  <h2>Profil Singkat</h2>
+  <p>
+    Seorang Full Stack Developer dengan pengalaman lebih dari 5 tahun dalam pengembangan aplikasi web dan mobile. Terbiasa menggunakan Laravel, React, dan Node.js untuk membangun sistem yang skalabel dan efisien. Memiliki kemampuan komunikasi yang baik dan terbiasa bekerja dalam tim Agile.
+  </p>
+
+  <h2>Keahlian Teknis</h2>
+  <ul>
+    <li><strong>Bahasa Pemrograman:</strong> PHP, JavaScript, TypeScript, SQL, Go</li>
+    <li><strong>Framework:</strong> Laravel, Express.js, React.js, Vue.js, Golang</li>
+    <li><strong>Database:</strong> MySQL, PostgreSQL, MongoDB</li>
+    <li><strong>Tools:</strong> Git, Docker, Figma, Postman</li>
+    <li><strong>CI/CD & Deployment:</strong> GitHub Actions, Vercel, Netlify, DigitalOcean</li>
+  </ul>
+
+  <h2>Pengalaman Kerja</h2>
+  <h3>Badan Kepegawaian Negara – Full Stack Developer</h3>
+  <p><em>Des 2009 – Sekarang (Jakarta, Indonesia)</em></p>
+  <ul>
+    <li>Membangun dan mengembangkan aplikasi supporting unit berbasis web dengan framework Laravel, React.js, Next.js</li>
+    <li>Implementasi autentikasi SSO dan integrasi API</li>
+    <li>Menyusun dokumentasi teknis kebutuhan dan memberikan pelatihan</li>
+  </ul>
+
+  <h3>Freelance – Web Developer</h3>
+  <p><em>Mei 2018 – Sekarang</em></p>
+  <ul>
+    <li>Membangun berbagai website Company Profile, e-Commerce, dan Presensi Online Android dan Web</li>
+    <li>Mengelola proyek end-to-end dari diskusi awal hingga deployment</li>
+    <li>Fokus pada integrasi, performa, dan keamanan</li>
+  </ul>
+
+  <h2>Pendidikan</h2>
+  <p>S1 Sistem Informasi – STMIK Mercusuar</p>
+
+  <h2>Sertifikasi</h2>
+  <ul>
+    <li>Golang Microservices - PT. ARTIVISI INTERMEDIA</li>
+    <li>Certified Penetration Tester - Cyber Security Malaysia</li>
+    <li>Scrum Master - PT. ADAPTIVA SINERGI ASIA</li>
+  </ul>
+
+  <h2>Bahasa</h2>
+  <ul>
+    <li>Indonesia (Baik)</li>
+    <li>Inggris (Menengah)</li>
+  </ul>
+  </section>
+</main>
+<?php
+include 'footer.php'; ?>
