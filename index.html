@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Umadi | Full Stack Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Layout -->
+  <div id="app">
+    <!-- Include layout.html with JS or server-side include -->
+  </div>
+
+  <script>
+    // Inject layout.html ke dalam index.html
+    fetch('layout.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('app').innerHTML = html);
+  </script>
+</body>
+</html>
