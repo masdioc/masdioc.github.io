@@ -1,56 +1,19 @@
-<section id="resume" style="font-family: sans-serif; padding: 2rem; max-width: 900px; margin: auto;">
-  <h1 style="font-size: 2rem; font-weight: bold;">Umadi</h1>
-  <p>Jl. Swadaya 1 No. 8, Cililitan, Kramat Jati, Jakarta Timur</p>
-  <p>Telepon: +62 878-7825-2678 | Email: masdioc@gmail.com</p>
-  <p>LinkedIn: <a href="https://linkedin.com/in/umadi-umadi-201a4a234" target="_blank">linkedin.com/in/umadi-umadi-201a4a234</a> |
-     GitHub: <a href="https://masdioc.github.io" target="_blank">masdioc.github.io</a></p>
+<body>
+  <div id="header-container"></div>
+  <main id="content-container"></main>
+  <footer id="footer-container"></footer>
 
-  <hr style="margin: 1.5rem 0;" />
+  <script>
+    fetch('header.html')
+      .then(r => r.text())
+      .then(d => document.getElementById('header-container').innerHTML = d);
 
-  <h2>Profil Singkat</h2>
-  <p>
-    Seorang Full Stack Developer dengan pengalaman lebih dari 5 tahun dalam pengembangan aplikasi web dan mobile. Terbiasa menggunakan Laravel, React, dan Node.js untuk membangun sistem yang skalabel dan efisien. Memiliki kemampuan komunikasi yang baik dan terbiasa bekerja dalam tim Agile.
-  </p>
+    fetch('resume2.html')
+      .then(r => r.text())
+      .then(d => document.getElementById('content-container').innerHTML = d);
 
-  <h2>Keahlian Teknis</h2>
-  <ul>
-    <li><strong>Bahasa Pemrograman:</strong> PHP, JavaScript, TypeScript, SQL, Go</li>
-    <li><strong>Framework:</strong> Laravel, Express.js, React.js, Vue.js, Golang</li>
-    <li><strong>Database:</strong> MySQL, PostgreSQL, MongoDB</li>
-    <li><strong>Tools:</strong> Git, Docker, Figma, Postman</li>
-    <li><strong>CI/CD & Deployment:</strong> GitHub Actions, Vercel, Netlify, DigitalOcean</li>
-  </ul>
-
-  <h2>Pengalaman Kerja</h2>
-  <h3>Badan Kepegawaian Negara – Full Stack Developer</h3>
-  <p><em>Des 2009 – Sekarang (Jakarta, Indonesia)</em></p>
-  <ul>
-    <li>Membangun dan mengembangkan aplikasi supporting unit berbasis web dengan framework Laravel, React.js, Next.js</li>
-    <li>Implementasi autentikasi SSO dan integrasi API</li>
-    <li>Menyusun dokumentasi teknis kebutuhan dan memberikan pelatihan</li>
-  </ul>
-
-  <h3>Freelance – Web Developer</h3>
-  <p><em>Mei 2018 – Sekarang</em></p>
-  <ul>
-    <li>Membangun berbagai website Company Profile, e-Commerce, dan Presensi Online Android dan Web</li>
-    <li>Mengelola proyek end-to-end dari diskusi awal hingga deployment</li>
-    <li>Fokus pada integrasi, performa, dan keamanan</li>
-  </ul>
-
-  <h2>Pendidikan</h2>
-  <p>S1 Sistem Informasi – STMIK Mercusuar</p>
-
-  <h2>Sertifikasi</h2>
-  <ul>
-    <li>Golang Microservices - PT. ARTIVISI INTERMEDIA</li>
-    <li>Certified Penetration Tester - Cyber Security Malaysia</li>
-    <li>Scrum Master - PT. ADAPTIVA SINERGI ASIA</li>
-  </ul>
-
-  <h2>Bahasa</h2>
-  <ul>
-    <li>Indonesia (Baik)</li>
-    <li>Inggris (Menengah)</li>
-  </ul>
-</section>
+    fetch('footer.html')
+      .then(r => r.text())
+      .then(d => document.getElementById('footer-container').innerHTML = d);
+  </script>
+</body>
