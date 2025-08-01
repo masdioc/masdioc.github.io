@@ -3,109 +3,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Resume Umadi</title>
+  <title>Umadi | Full Stack Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 2rem;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
       background-color: #f4f6f8;
       color: #333;
     }
-    h1 {
+
+    header {
+      background-color: #004B93;
+      color: white;
+      padding: 2rem 1rem;
       text-align: center;
-      color: #2c3e50;
     }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 1rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem 2rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
     h2 {
-      border-bottom: 2px solid #007BFF;
-      color: #007BFF;
-      padding-bottom: 0.3rem;
-      margin-top: 2rem;
+      border-bottom: 2px solid #004B93;
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+      color: #004B93;
     }
-    .section {
-      margin-bottom: 1.5rem;
-    }
-    .contact {
-      text-align: center;
-      font-size: 0.95rem;
-      margin-bottom: 2rem;
-      line-height: 1.5;
-    }
+
     ul {
       padding-left: 1.2rem;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .contact p {
+      margin: 0.3rem 0;
+    }
+
+    .contact i {
+      margin-right: 0.5rem;
+      color: #007BFF;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e5e5e5;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 0.5rem;
+      }
+
+      header img {
+        width: 100px;
+        height: 100px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Umadi</h1>
+  <header>
+    <img src="https://i.imgur.com/Ml0BYqn.jpg" alt="Foto Umadi" />
+    <h1>Umadi</h1>
+    <p>Full Stack Developer | Laravel · React.js · Node.js · Android.java</p>
+    <nav>
+      <a href="#contact">Kontak</a>
+      <a href="#resume">Resume</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#project">Project</a>
+    </nav>
+  </header>
 
-  <div class="contact">
-    Jl. Swadaya 1 No. 8, Cililitan, Kramat Jati, Jakarta Timur<br>
-    Telepon: +62 878-7825-2678 | Email: masdioc@gmail.com<br>
-    LinkedIn: <a href="https://linkedin.com/in/umadi-umadi-201a4a234">linkedin.com/in/umadi</a> |
-    GitHub: <a href="https://github.com/masdioc">github.com/masdioc</a>
-  </div>
+  <main>
+    <section id="contact" class="contact">
+      <h2>Kontak</h2>
+      <p><i class="fas fa-envelope"></i> masdioc@gmail.com</p>
+      <p><i class="fas fa-phone"></i> +62 878-7825-2678</p>
+      <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/umadi-umadi-201a4a234" target="_blank">linkedin.com/in/umadi</a></p>
+      <p><i class="fab fa-github"></i> <a href="https://github.com/masdioc" target="_blank">github.com/masdioc</a></p>
+    </section>
 
-  <div class="section">
-    <h2>Profil Singkat</h2>
-    <p>
-      Seorang Full Stack Developer dengan pengalaman lebih dari 5 tahun dalam pengembangan aplikasi web dan mobile.
-      Terbiasa menggunakan Laravel, React, dan Node.js untuk membangun sistem yang skalabel dan efisien.
-      Memiliki kemampuan komunikasi yang baik dan terbiasa bekerja dalam tim Agile.
-    </p>
-  </div>
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Full Stack Developer dengan pengalaman lebih dari 5 tahun dalam pengembangan aplikasi web dan mobile. Terbiasa menggunakan Laravel, React, dan Node.js untuk membangun sistem yang skalabel dan efisien. Memiliki kemampuan komunikasi yang baik dan terbiasa bekerja dalam tim Agile.</p>
+      <ul>
+        <li><strong>Bahasa Pemrograman:</strong> PHP, JavaScript, TypeScript, SQL, Go</li>
+        <li><strong>Framework:</strong> Laravel, Express.js, React.js, Vue.js, Golang</li>
+        <li><strong>Database:</strong> MySQL, PostgreSQL, MongoDB</li>
+        <li><strong>Tools:</strong> Git, Docker, Figma, Postman</li>
+        <li><strong>CI/CD:</strong> GitHub Actions, Vercel, Netlify, DigitalOcean</li>
+      </ul>
+      <p><a href="#">Lihat Resume Lengkap &raquo;</a></p>
+    </section>
 
-  <div class="section">
-    <h2>Keahlian Teknis</h2>
-    <ul>
-      <li>Bahasa Pemrograman: PHP, JavaScript, TypeScript, SQL, Go</li>
-      <li>Framework: Laravel, Express.js, React.js, Vue.js, Golang</li>
-      <li>Database: MySQL, PostgreSQL, MongoDB</li>
-      <li>Tools: Git, Docker, Figma, Postman</li>
-      <li>CI/CD & Deployment: GitHub Actions, Vercel, Netlify, DigitalOcean</li>
-    </ul>
-  </div>
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <ul>
+        <li>Dashboard Kepegawaian – Laravel & PostgreSQL</li>
+        <li>Company Profile Website – Laravel & Tailwind CSS</li>
+        <li>Aplikasi Presensi Mobile – Android Java Native & Laravel</li>
+        <li>Aplikasi e-Commerce – Astro PWA React.js & Laravel</li>        
+      </ul>
+    </section>
 
-  <div class="section">
-    <h2>Pengalaman Kerja</h2>
-    <h3>Badan Kepegawaian Negara – Full Stack Developer</h3>
-    <p><em>Des 2009 – Sekarang (Jakarta, Indonesia)</em></p>
-    <ul>
-      <li>Membangun dan mengembangkan aplikasi supporting unit berbasis web dengan Laravel, React.js, Next.js</li>
-      <li>Implementasi autentikasi SSO dan integrasi API</li>
-      <li>Menyusun dokumentasi teknis kebutuhan dan memberikan pelatihan</li>
-    </ul>
+     
+  </main>
 
-    <h3>Freelance – Web Developer</h3>
-    <p><em>Mei 2018 – Sekarang</em></p>
-    <ul>
-      <li>Membangun website Company Profile, e-Commerce, dan Presensi Online Android/Web</li>
-      <li>Mengelola proyek dari awal hingga deployment</li>
-      <li>Fokus pada integrasi, performa, dan keamanan</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Pendidikan</h2>
-    <p>S1 Sistem Informasi – STMIK Mercusuar</p>
-  </div>
-
-  <div class="section">
-    <h2>Sertifikasi</h2>
-    <ul>
-      <li>Golang Microservices – PT. ARTIVISI INTERMEDIA</li>
-      <li>Certified Penetration Tester – Cyber Security Malaysia</li>
-      <li>Scrum Master – PT. ADAPTIVA SINERGI ASIA</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>Bahasa</h2>
-    <ul>
-      <li>Indonesia (Baik)</li>
-      <li>Inggris (Menengah)</li>
-    </ul>
-  </div>
+  <footer>
+    &copy; 2025 Umadi. All rights reserved.
+  </footer>
 
 </body>
 </html>
